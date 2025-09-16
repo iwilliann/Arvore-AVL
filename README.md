@@ -64,7 +64,6 @@ LEGENDA:
 - FB = Fator de Balanceamento (alturaEsquerda - alturaDireita)
 - Todos os nós estão dentro do limite de balanceamento AVL
 
-=======================
 PSEUDOCÓDIGO - ÁRVORE AVL
 =========================
 
@@ -98,7 +97,7 @@ Classe No {
     }
 }
 
-=======================
+
 ESTRUTURA DA ÁRVORE AVL
 =======================
 Classe ArvoreAVL {
@@ -262,7 +261,7 @@ Classe ArvoreAVL {
     }
 }
 
-==================
+
 PROGRAMA PRINCIPAL
 ==================
 Programa Main {
