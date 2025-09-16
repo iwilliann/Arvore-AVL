@@ -1,0 +1,63 @@
+          ÁRVORES AVL BALANCEADAS
+=================================================
+
+ÁRVORE 1 - Sequência: 40, 20, 60, 10, 30, 25
+
+       30 (h=3, FB=0)
+      /            \
+   20 (h=2, FB=0)   40 (h=2, FB=-1)
+   /      \              \
+10 (h=1)  25 (h=1)       60 (h=1)
+
+Fatores de Balanceamento:
+- 30: FB = 0 (perfeitamente balanceado)
+- 20: FB = 0 (perfeitamente balanceado)
+- 40: FB = -1 (ligeiramente desbalanceado à direita)
+- 10, 25, 60: FB = 0 (folhas)
+
+=================================================
+
+ÁRVORE 2 - Sequência: 60, 40, 80, 35, 50, 90, 20, 38, 37
+
+           60 (h=4, FB=1)
+          /              \
+     38 (h=3, FB=0)       80 (h=2, FB=-1)
+     /          \              \
+35 (h=2, FB=0)  40 (h=2, FB=-1) 90 (h=1)
+/       \              \
+20 (h=1) 37 (h=1)       50 (h=1)
+
+Fatores de Balanceamento:
+- 60: FB = 1 (ligeiramente desbalanceado à esquerda)
+- 38: FB = 0 (perfeitamente balanceado)
+- 80: FB = -1 (ligeiramente desbalanceado à direita)
+- 35: FB = 0 (perfeitamente balanceado)
+- 40: FB = -1 (ligeiramente desbalanceado à direita)
+- 20, 37, 50, 90: FB = 0 (folhas)
+
+=================================================
+
+ÁRVORE 3 - Sequência: 30, 20, 10, 25, 40, 50, 5, 35, 45
+
+           30 (h=4, FB=0)
+          /              \
+     20 (h=3, FB=0)       40 (h=3, FB=0)
+     /          \         /          \
+10 (h=2, FB=0)  25 (h=1) 35 (h=1)    50 (h=2, FB=1)
+/       \                              \
+5 (h=1)  null                          45 (h=1)
+
+Fatores de Balanceamento:
+- 30: FB = 0 (perfeitamente balanceado)
+- 20: FB = 0 (perfeitamente balanceado)
+- 40: FB = 0 (perfeitamente balanceado)
+- 10: FB = 0 (perfeitamente balanceado)
+- 50: FB = 1 (ligeiramente desbalanceado à esquerda)
+- 5, 25, 35, 45: FB = 0 (folhas)
+
+=================================================
+
+LEGENDA:
+- h = altura do nó
+- FB = Fator de Balanceamento (alturaEsquerda - alturaDireita)
+- Todos os nós estão dentro do limite de balanceamento AVL
